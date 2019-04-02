@@ -16,7 +16,7 @@ var MAX_SAM_CHANGE = 10;
 var LAST_CHANGE_TIME = Date.now();
 //var GET_SAM_COUNT_URL = 'https://68eks9w83m.execute-api.us-east-1.amazonaws.com/Prod/sam';
 var GET_SAM_COUNT_URL = 'https://yr4iwnidcl.execute-api.us-east-1.amazonaws.com/Prod/sam';
-var TIME_BETWEEN_COUNT_UPDATE_MS = 4000;
+var TIME_BETWEEN_COUNT_UPDATE_MS = 32000;
 
 function preload() {
     game.load.spritesheet('spinner', 'squirrel.png', 64, 64);
@@ -25,7 +25,7 @@ function preload() {
 
 function create() {
     game.stage.disableVisibilityChange = true;
-    game.stage.backgroundColor = '#967da7';
+    game.stage.backgroundColor = '#7373BD';
     sprites = game.add.physicsGroup(Phaser.Physics.ARCADE);
     createSprites(DESIRED_SAM_COUNT);
 }
